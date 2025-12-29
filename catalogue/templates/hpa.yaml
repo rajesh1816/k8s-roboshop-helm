@@ -9,11 +9,11 @@ spec:
     kind: Deployment
     name: catalogue 
   minReplicas: 1 # Minimum number of replicas
-  maxReplicas: "{{ .Values.hpa.maxReplicas }}"
+  maxReplicas: {{ .Values.hpa.maxReplicas }}
   metrics:
   - type: Resource
     resource:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: "{{ .Values.hpa.cpuutilization }}"
+        averageUtilization: {{ .Values.hpa.cpuutilization }}
