@@ -1,0 +1,4 @@
+statefulset:
+  imageURL: rajesh947/mongodb
+  imageVersion: v1
+
