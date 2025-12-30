@@ -1,0 +1,5 @@
+apiVersion: v2
+name: payment
+description: A payment Helm chart for Kubernetes
+version: 1.0.0
+appVersion: v1

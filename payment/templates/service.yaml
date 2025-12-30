@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment
+  namespace: roboshop
+  labels:
+    project: roboshop
+    component: payment
+    tier: app
+spec:
+  selector:   
+    project: roboshop
+    component: payment
+    tier: app    
+  ports:
+    - protocol: TCP
+      port: 8080       
+      targetPort: 8080 # container port
+  type: ClusterIP
