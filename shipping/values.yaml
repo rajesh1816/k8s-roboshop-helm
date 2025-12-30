@@ -1,0 +1,7 @@
+deployment:
+  imageURL: rajesh947/shipping
+  imageVersion: v1
+hpa:
+  maxReplicas: 10
+  cpuutilization: 75
+

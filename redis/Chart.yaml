@@ -1,5 +1,5 @@
 apiVersion: v2
-name: mongodb
-description: A mongodb Helm chart for Kubernetes
+name: redis
+description: A redis Helm chart for Kubernetes
 version: 1.0.0
 appVersion: v1
